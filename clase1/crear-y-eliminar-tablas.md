@@ -19,8 +19,22 @@
 
     CREATE TABLE billeteras
     (
-        id tinyint unsigned,
-        nombre varchar(30),
-        precio float(9,2) unsigned,
-        stock tinyint unsigned
+        id tinyint unsigned auto_increment primary key not null,
+        nombre varchar(30) unique not null,
+        precio float(9,2) unsigned not null,
+        stock tinyint unsigned not null
     );
+
+## Borrar tablas
+
+> Para borrar una tabla utilizamos el comando
+> **DROP TABLE** 
+
+> Sintáxis: 
+    
+    DROP TABLE nombretabla;
+
+> Ejemplo práctico: 
+
+    DROP TABLE billeteras;
+
