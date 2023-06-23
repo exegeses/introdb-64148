@@ -9,5 +9,18 @@
 
     CREATE TABLE nombre  
     (  
-        nombreColumna tipoDato
+        nombreColumna tipoDato características,
+        nombreColumna2 tipoDato características,
+        nombreColumna3 tipoDato características
+    );
+
+
+> Ejemplo práctico: 
+
+    CREATE TABLE billeteras
+    (
+        id tinyint unsigned,
+        nombre varchar(30),
+        precio float(9,2) unsigned,
+        stock tinyint unsigned
     );
